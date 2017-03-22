@@ -1,21 +1,12 @@
 def template(source_template, req_id):
-    
+    # Make sure the inputs are strings
     template = str(source_template)
-
-    # Substitute for %CODE%
-    template_split_begin = template.index("%CODE%")
-    template_split_end = template_split_begin + 6
-    template_part_one = str(template[0:(template_split_begin)])
-    template_part_two = str(template[template_split_end:len(template)])
     code = str(req_id)
-    template = str(template_part_one + code + template_part_two)
+    # Substitute for %CODE%
+    # Subsitutes all occurances of %CODE%, assuming the original version had the undesirable behavior of only
+    # substituting the first occurance. If this behavior is desirable, only the first occurance can be changed with template.replace("%CODE%",code,1)
+    template = template.replace("%CODE%",code)
 
     # Substitute for %ALTCODE%
-    template_split_begin = template.index("%ALTCODE%")
-    template_split_end = template_split_begin + 9
-    template_part_one = str(template[0:(template_split_begin)])
-    template_part_two = str(template[template_split_end:len(template)])
     altcode = code[0:5] + "-" + code[5:8]
-    return template_part_one + altcode + template_part_two
-  
-
+    return template.replace("%ALTCODE%",altcode)
