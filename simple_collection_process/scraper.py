@@ -1,7 +1,7 @@
 import requests, csv, shutil,sys
 from bs4 import BeautifulSoup
 
-print('This program scrapes to "data.csv" in your currenty directory')
+print('This program scrapes to "data.csv" in your current directory')
 print('the first 6 images from each article are also included as "img(n)"')
 print('Scraping...')
 
