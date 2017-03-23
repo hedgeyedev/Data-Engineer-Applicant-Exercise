@@ -3,8 +3,8 @@ def template(source_template, req_id):
     template = str(source_template)
     code = str(req_id)
     # Substitute for %CODE%
-    # Subsitutes all occurances of %CODE%, assuming the original version had the undesirable behavior of only
-    # substituting the first occurance. If this behavior is desirable, only the first occurance can be changed with template.replace("%CODE%",code,1)
+    # Subsitutes all occurrences of %CODE%, assuming the original version had the undesirable behavior of only
+    # substituting the first occurrence. If this behavior is desirable, only the first occurrence can be changed with template.replace("%CODE%",code,1)
     template = template.replace("%CODE%",code)
 
     # Substitute for %ALTCODE%
