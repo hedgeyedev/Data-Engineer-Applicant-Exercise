@@ -1,0 +1,26 @@
+Ashwin Chati
+e-mail : achati@hawk.iit.edu
+LinkedIn : https://www.linkedin.com/in/achati	                            
+Address : Chicago, IL 
+Contact : +1 (312) 468-2526
+GitHub : https://github.com/ashwinchati1
+
+	
+April 19th, 2017
+	
+Dear Hiring Manager,
+
+I am a Computer Science graduate student at Illinois Institute of Technology, Chicago, IL with good academic standing and strong professional experience. I have 2 years and 9 months of experience in Database Designing and Data Warehousing. I also have in-depth knowledge of Big Data, Distributed Systems and Cloud Computing platforms. I am confident that, with my graduate education and professional experience, I will be a great fit for the Data Engineer position.
+
+From November 2012 to July 2015, I served as an Associate Consultant at Capgemini India Pvt Ltd, which is one of the largest business units of Capgemini group. I developed efficient, reliable and cost effective data warehousing solutions for multimillion-dollar projects for various major players in financial sector. I was involved in database designing, development and support of ETL processes and UNIX shell scripts. The opportunity strengthened my database and programming quotient.
+
+To further enhance my skills and in quest for learning, I joined masters program at Illinois Institute of Technology, Chicago. The intensive coursework and demanding class projects has further enhanced my horizon into large scale systems development. Throughout my graduate studies, I have learned and practiced new technologies.
+ 
+My technical expertise includes RDBMS, ETL, Data Modeling, Data Warehousing, programming and scripting languages such as Java/J2EE, Unix Shell Scripting, C, C++, SQL, PL/SQL, Python, frameworks like Spring, Hibernate, Big Data technologies like Hadoop, Pig, Hive and Cloud Technologies like Amazon Web Services. 
+
+I am a self starter and motivated team player with ability to accomplish task independently. My solid foundation of computer science concepts, analytical skills and willingness to go the extra mile to get the job done make me an excellent fit for the opportunity. In addition, my strong dedication towards achieving excellence and my commitment to continuously increasing my education and learn new technologies will help me contribute towards organization’s growth.
+
+I would appreciate if you give me opportunity to discuss more about my credentials and position. Your time and consideration is greatly appreciated. Please let me know if you need any additional information that would be helpful in your consideration of my candidacy. I can be reached at achati@hawk.iit.edu or (312)-468-2526 anytime.
+
+Sincerely,
+Ashwin Chati

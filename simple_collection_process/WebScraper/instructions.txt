@@ -1,0 +1,6 @@
+1. go to Hedgeye directory.
+2. Give link to scrape, path of image file and path of csv
+   file into the config.properties file.
+3. Run  the DataCollector.py file using command
+   python DataCollector.py.
+4. It will generate the file generatedFile.txt and firstImage.jpg.

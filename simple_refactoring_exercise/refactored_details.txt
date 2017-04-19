@@ -1,0 +1,7 @@
+1. Only required imports are taken instead of using * for performance improvement.
+2. Template file is read from resources folder. It is always a good practice to keep all the files at central repository.
+3. Instead of hardcoding values in the methods, it is always a good practice to make them constant and then use in code.
+4. Removed unnecessary variables.
+5. Removed PrintWriter, StringWriter from code as they were not being used.
+6. Instead of printing exception we are throwing it and then catching in CodeReplacerTest.
+7. Resturning the result in CodeRefactor instead of printing it.
