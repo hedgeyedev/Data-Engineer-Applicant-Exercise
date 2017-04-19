@@ -1,0 +1,25 @@
+Instructions for Running Scraping Script:
+
+This script uses Python 3 (I used version 3.5.2)
+
+To install dependencies run:
+pip3 install -r requirements.txt
+
+To run the script:
+python3 scraper.py
+
+The script dumps the data.csv in your current directory along with the first image of the six articles.
+
+Refactoring Problem Notes (Python):
+
+When refactoring the template script, I noticed that it would only replace the first occurrence of %CODE% and %ALTCODE%. This is probably not desirable behavior, so I used the built in Python replace() method to substitute the substrings with the ID. I then changed the test, to ensure that the code will replace multiple occurrences of %CODE% and %ALTCODE%. I also made sure that the inputs were always strings by calling the str() method on them.
+
+Cover Letter:
+
+Hello I’m Michael Trueba,
+
+I’m a senior in college, who is about 2 months from graduating. I’ve been using Python for roughly four years now. I enjoy using Python to handle data. I’m always working on an experimental project to expand my knowledge of Python, and the tools that are used with it. Handling data is usually cumbersome, but I enjoy the challenge of deriving insights from previously useless data. Having used Python for four years, I’ve come to love it, and all it has to offer. I’ve also used Ruby extensively over the past year with Rails. 
+
+Having interned at Hedgeye in the past, I know it is a great company, and I would be very happy to work there.
+
+Thank you for your consideration.
