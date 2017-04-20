@@ -1,0 +1,13 @@
+Version used: python 2.7
+Libs: Install bs4 and requests libraries
+
+Assuming python is set as env, below commands from terminal should install the libs:
+pip install bs4
+pip install requests
+
+Assuming python is set as env, below command should run the program from terminal
+python simple_collection_process.py
+
+The scrapped_contents.csv file will be overwritten
+
+
