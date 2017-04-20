@@ -1,28 +1,35 @@
 How many years of development experience do you have?
-
+I have 1-2 year of development experience
 
 How many years of JavaScript experience do you have?
+3 months of internship experience
 
 
 How many years of Ruby experience do you have?
+0. I'm willing to learn Ruby
 
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
+I have 0-1 years of Java, python experience.
 
 
 What are your opinions on Agile software development?
+In my opinion, agile model brings in customer satisfaction as its a continuous delivery and adding value to the product in every increment.
 
 
 TDD or BDD?
-
+Both complement each other nicely. So, we should combine both for best results.
 
 Do you have any Ruby or Ruby on Rails experience?
-
+0. I'm open to learn any new technology.
 
 What are you looking for in a job?
+I look for a challenging position. where I can learn and contribute to the team
 
 
 Are you legal to work in the US?
+Yes, I hold F-1 Student visa. I'm authorized to work for 36 months. I would require work visa sponsorship in the future.
 
 
 When can you start?
+I can start from June 26,2017.
