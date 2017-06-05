@@ -1,0 +1,4 @@
+- Python 3.6.0rc1 is required to run this program.
+- You can open the py file on Python IDLE and run it from there.
+- The script will generate the csv output file in the same directory, in addition to the first image from each article.
+- When opening the csv file with a spreadsheet tool, you will have to set the `|` character as the deliminator to view it neatly.
