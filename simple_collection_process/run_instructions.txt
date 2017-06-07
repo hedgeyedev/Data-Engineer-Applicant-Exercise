@@ -1,0 +1,9 @@
+Ran using python 3.5.2
+Needs to be a version of python3
+
+Packages needed:
+requests==2.17.3
+lxml==3.8.0
+
+Can 'pip install'
+Run 'python collection.py' from /simple_collection_process/
