@@ -2,12 +2,28 @@ Dear Hiring Manager,
 
 I would like to express interest in applying for the Data Engineer position at Hedgeye.
 
-My journey as a Software Developer began when, as a Psychology major nearing graduation, I took an Intro to Computer Science course. Although intrigued by the mayhem that is the human mind, I was always a person of logic. And programming, to me, seemed to be the transformation of logic into creativity. I was won over. Thereafter, I grounded myself in the fundamentals of object-oriented design, data structures and algorithms through more advanced courses. I learned, outside of school, other languages such as Python and JavaScript. Of course, the learning never stops, and I am continuously seeking to enhance my skills in these and more.
+My journey as a Software Developer began when, as a Psychology major nearing graduation, 
+I took an Intro to Computer Science course. Although intrigued by the mayhem that is the 
+human mind, I was always a person of logic. And programming, to me, seemed to be the 
+transformation of logic into creativity. I was won over. Thereafter, I grounded myself 
+in the fundamentals of object-oriented design, data structures and algorithms through 
+more advanced courses. I learned, outside of school, other languages such as Python and 
+JavaScript. Of course, the learning never stops, and I am continuously seeking to enhance 
+my skills in these and more.
 
-In my past internship and current contract role, I've had the pleasure of applying such skills in a real-world scenarios. Every day, I've tackled the challenge of figuring out how to solve problems I’d never encountered before. At Viacom, I was immersed in an Agile environment, in which my team and I built a web application intended to help development teams improve their workflow. It ultimately proved to be valuable to the company. At NBC, I've been building proofs of concepts of software designed to steer business decisions.
-My desire is to continue building software that act as creative solutions, and provide value. I want to continue to hone and apply the skills I possess, and learn new ones each day in order to benefit my team, and grow as a Developer. 
+In my past internship and current contract role, I've had the pleasure of applying such 
+skills in a real-world scenarios. Every day, I've tackled the challenge of figuring out 
+how to solve problems I’d never encountered before. At Viacom, I was immersed in an 
+Agile environment, in which my team and I built a web application intended to help 
+development teams improve their workflow. It ultimately proved to be valuable to the 
+company. At NBC, I've been building proofs of concepts of software designed to steer 
+business decisions. My desire is to continue building software that act as creative 
+solutions, and provide value. I want to continue to hone and apply the skills I possess, 
+and learn new ones each day in order to benefit my team, and grow as a Developer. 
 
-As part of this application, I've filled out the questionnaire, and completed the exercises. For the refactoring exercise, I chose to use Python. I look forward to your evaluation of said exercises. Thank you.
+As part of this application, I've filled out the questionnaire, and completed the exercises. 
+For the refactoring exercise, I chose to use Python. I look forward to your evaluation of 
+said exercises. Thank you.
 
 
 Sincerely,
