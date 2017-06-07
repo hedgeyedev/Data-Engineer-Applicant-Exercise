@@ -1,28 +1,29 @@
 How many years of development experience do you have?
-
+-- 1
 
 How many years of JavaScript experience do you have?
-
+-- 1
 
 How many years of Ruby experience do you have?
-
+-- 0
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+-- 1 year of Python
 
 What are your opinions on Agile software development?
-
+-- I think that it's a very productive way of creating software. I'm a big fan of daily standups, sprint meetings, etc. It's important for everyone to know where everyone else is with the project. The idea of an MVP is crucial, as having working software at each interval allows the team to determine which direction is best to take next, or how to evolve both the product and the team's practices.
 
 TDD or BDD?
-
+-- I haven't formally worked with either. I had exposure to TDD in a past internship, and the impression I got was that TDD helps the developer guide himself/herself to clean, simple code. It's a good way to keep yourself in check, and keep from 'coloring outside the lines', in a sense.
 
 Do you have any Ruby or Ruby on Rails experience?
-
+-- No
 
 What are you looking for in a job?
-
+-- An environment that will assist in my growth as a developer. One in which I can take on and contribute to meaningful, challenging projects.
 
 Are you legal to work in the US?
-
+-- Yes
 
 When can you start?
+-- Within 3-5 weeks of confirmation.
