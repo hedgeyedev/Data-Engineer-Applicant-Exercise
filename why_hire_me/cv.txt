@@ -1,0 +1,25 @@
+Dear HR Manager:
+
+		My name is Xiaochen Zhuo. This letter is to express my interest for a role as an Engineer in your company.
+
+		Driven by my interest in artificial intelligence , I came to US for a computer science program. After graduation, I’ve been working as a software engineer in California for one year and a half.
+
+		My core programming skills are:
+			Python: Django and other libraries
+			Java: Sprint boot, JPA
+			Angular 2
+
+		I know finance and have some trading experience in: A share,H share,Forex
+
+		I will get my green card in about 3 months. 
+
+
+Sincerely,
+Xiaochen Zhuo
+
+Oakland,CA
+831-239-2778
+southseachicken@gmail.com
+https://github.com/realXiaochen
+
+
