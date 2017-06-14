@@ -1,28 +1,40 @@
-How many years of development experience do you have?
+1.How many years of development experience do you have?
+
+	Two years in industry.
 
 
-How many years of JavaScript experience do you have?
+2.How many years of JavaScript experience do you have?
+	
+	Two years.
+	
+3.How many years of Ruby experience do you have?
 
+	Zero.
 
-How many years of Ruby experience do you have?
+4.How many years of other high level language(s) if not Ruby or JavaScript do you have?
 
+	Python: Four Years.
 
-How many years of other high level language(s) if not Ruby or JavaScript do you have?
+5.What are your opinions on Agile software development?
 
+ 	It lowers the cost of uncertainty. It is effective in constantly changing environments.
 
-What are your opinions on Agile software development?
+6.TDD or BDD?
 
+	BDD.
+	BDD gives a clearer understanding as to what the system should do from the perspective of the developer and the customer. TDD only gives the developer an understanding of what the system should do.
 
-TDD or BDD?
+7.What are you looking for in a job?
+	
+	1.Long term profitability.
+	2.Sophistication of my job.
+	3.Sense of accomplishment.
+	4.Good people.
 
+8.Are you legal to work in the US?
 
-Do you have any Ruby or Ruby on Rails experience?
+	Yes, I use OPT now and I will get my green card in about 3 months.
 
+9.When can you start?
 
-What are you looking for in a job?
-
-
-Are you legal to work in the US?
-
-
-When can you start?
+	In 2 weeks
