@@ -4,12 +4,11 @@
 1. Collection problem
 
     * Language: Python (beautifulsoup, pandas)
-    * logic in 'test.py', please just 'python test.py'
-    * images in '/images'
+    * Logic in 'test.py', please just 'python test.py'
+    * Images in '/images'
     * .csv in '/csv'
 
 
-2. Refactoring problem
-    * Language: Python
-    * variable redefined
-    * used built-in function
+2. Refactoring problem (Python)
+    * Changed variable name
+    * Used built-in function
