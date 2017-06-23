@@ -1,28 +1,31 @@
 How many years of development experience do you have?
-
+I have been coding in C/C++, Java and Python since 2009 but never in a professional environment.
+But feel free to check my projects in my GitHub repository.
 
 How many years of JavaScript experience do you have?
-
+I do not have experience with JS but I can learn JS.
 
 How many years of Ruby experience do you have?
-
+I do not have experience but I will love to learn Ruby.
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+Java and Python (5 and 3 years respectively)
 
 What are your opinions on Agile software development?
-
+I think they are great but I also think they can be improve it.
 
 TDD or BDD?
-
+Almost everything in life is a trade-off and on this topic is the same.
+I will use both options at the same time with the purpose of getting better software.
 
 Do you have any Ruby or Ruby on Rails experience?
-
+NO. :(
 
 What are you looking for in a job?
-
+Challenge and Team work to build big products.
 
 Are you legal to work in the US?
-
+Yes, I'm a green-card holder.
 
 When can you start?
+Probably in 2-3 weeks.
