@@ -1,0 +1,7 @@
+Andrew Berisha-Cornejo
+ahberisha@gmail.com
++1 203-832-2229
+
+I am qualified for the job as Junior Data Engineer not only because I have extensive knowledge and experience in a few of the required programming languages, but because I am enthusiastic, capable, and highly dedicated to figuring out problems. 
+I have four years of experience working in an Engineering environment focused on running test procedures and documentation. Throughout those years, I have been involved in creating and maintaining applications used in house as well as at a subsidiary. I have once had to completely remodel a database because the arbitrary size restrictions the DBMS had in place was too small for the amount of data we had generated.
+I can use my experience and knowledge to beneficial use for Hedgeye, particularly in designing and developing new user experiences, and maintaining already built applications currently in use.
