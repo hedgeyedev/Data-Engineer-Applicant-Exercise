@@ -1,33 +1,51 @@
-import requests, bs4, os, pathlib, tqdm
-import tkinter as tk
+import requests, bs4, os, tqdm, datetime
+import tkinter as tk, pandas as pd
 from tkinter import filedialog
 from dateutil import parser
 from urllib import request
 
 def scrape(url="https://app.hedgeye.com/insights/all?type=insight"):
 	links = getLinks(url)
-	folder = getFolderpath()
-	print("Generating CSVs and downloading images into folders...")
+	filename = setFilename()
+	list_=[]
+	df = createDataFrame()														# provides a database friendly interface
+	print("Generating CSV and downloading available images into directory...")
 	for link in tqdm.tqdm(links[:6]):											# generates progress bar as the program writes each link to file
-		writeToFolder(link,folder)
-def writeToFolder(link,folder):
+		df = writeToFolder(link,filename,df)
+def createList(soup,h1,article):
+	a = getAuthor(soup)															# returns author tuple containing image, name, and twitter handle
+	list_ = [getTime(soup),h1,a[1],a[0],a[2],articleText(article)]				# [time, title, author_name, author_img, twitter handle, content]
+	return list_
+def createDataFrame():
+	columns = ['date_published','title','author','author_img','author_twitter','content']	
+	df = pd.DataFrame(columns = columns)										# create DataFrame with columns
+	return df
+def writeToFolder(link,filename,df):
 	soup = getSoup(link)
 	article = soup.find('div',{'itemprop':'articleBody'})						# gets body element
 	h1 = soup.find('h1',{'itemprop':'name'}).getText()							# gets title from body
-	folder=folder+"\\"+ replaceUnwantedChar(h1)		
-	pathlib.Path(folder).mkdir(parents=True, exist_ok=True)
-	writeTextToFile(folder,h1,soup,article)
+	h1 = stripStr(h1)
+	list1 = createList(soup,h1,article)
+	df.loc[len(df)] = list1														# adds a row to DataFrame
+	df.to_csv(filename)															# write DataFrame to csv (rewrites if necessary)
+	folder = os.path.split(filename)[0]
 	writeImgToFile(folder,article)
+	return df
+def setFilename():
+	folder = getFolderpath()
+	now = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+	filename = os.path.join(folder,"scrape"+now+".csv")							# writes to one csv with timestamp
+	return filename
+def stripStr(s):																
+	str = s.rstrip()															# title needs newlines to be stripped on either side
+	str = str.lstrip()
+	return str
 def writeImgToFile(folder,article):
 	img = getImage(article)														# getImage returns [image url, image name]
 	if img is not None:
-		f = open(os.path.join(folder+"\\"+img[1]+".jpg"),'wb')
+		f = open(os.path.join(folder,img[1]+".jpg"),'wb')
 		f.write(request.urlopen(img[0]).read())									# opens image url as bytestream -> writes to file
 		f.close()	
-def writeTextToFile(folder,h1,soup,article):
-	f = open(os.path.join(folder+"\\"+replaceUnwantedChar(h1)+".csv"),'w')
-	f.write(getTime(soup)+h1+"\n"+ getAuthor(soup) + articleText(article))		# csv is composed of getTime, h1, getAuthor, and articleText
-	f.close()
 def getImage(article):
 	imgs = article.find_all('img')												# it just so happens that the first img with a src attribute is the one we're looking for
 	for img in imgs:
@@ -37,31 +55,33 @@ def articleText(article):
 	text = ""
 	raw_para = article.find_all('p')											# gets all <p> content within article. No headings for now.
 	for para in raw_para:
-		text = text + para.getText() + "\n"
+		if para.getText() is not "":
+			text = text + para.getText() + "\n"
 	return text
 def getAuthor(soup):
+	author_info =[]
 	author_headshot = soup.find('div',{'class':'headshot'})						# author image is found by attribute 'headshot'
 	if author_headshot is not None:
 		author_img = author_headshot.find('img')
-		text = "Author Image, " + author_img['src']+"\n"
+		author_info.append(author_img['src'])
 	else:
-		text = "Author Image, Not found\n"
+		author_info.append("")
 	author_name = soup.find('div',{'class':'full-name'})						# author name is found by attribute 'full-name'
 	if author_name is not None:
-		text = text +"Author, " + author_name.getText() + "\n"
+		author_info.append(author_name.getText())
 	else:
-		text = text + "Author, Not Found\n"
+		author_info.append("")
 	author_twitter = soup.find('div',{'class':'twitter-handle'})				#author twitter handle is found by attribute 'twitter-handle'
 	if author_twitter is not None:
-		text = text +"Author's Twitter handle, " + author_twitter.find('a',href = True).getText() + "\n"
+		author_info.append(author_twitter.find('a',href = True).getText())
 	else:
-		text = text + "Author's Twitter handle, Not Found\n"
-	return text
+		author_info.append("")
+	return author_info
 def getTime(soup):
 	time = soup.find('time',{'itemprop':'datePublished'})						# there are several <time> elements, the pertinent one has attribute 'datePublished'
 	time_spans = time.find_all('span')
 	time_  = time_spans[1]														# the correct time tag is found by choosing the second span
-	return "Date published, " + time_.text + "\n"
+	return time_.text
 def getSoup(url):
 	data = requests.get(url,cookies=addCookies())								# needs acceptable cookies to avoid paywall
 	soup = bs4.BeautifulSoup(data.content,"lxml")								# returns a dict that is easy to search
@@ -77,12 +97,13 @@ def getLinks(url):
 	return links
 def writeSoupToFile(soup):
 	folderPath=getFolderpath()
-	f = open(os.path.join(folderPath+"\\soup"+".html"),'wb')
+	f = open(os.path.join(folderPath,"soup.html"),'wb')
 	f.write(soup.prettify(encoding='utf-8'))
 	f.close()
 def getFolderpath():
 	root = tk.Tk()
 	root.withdraw()
+	root.update()
 	file_path = filedialog.askdirectory()
 	return file_path
 def addCookies():
@@ -92,7 +113,8 @@ def addCookies():
 	jar.set('_ga', 'GA1.2.449954818.1498729384',   domain='.hedgeye.com', path='/')
 	jar.set('customer_type', 'PremiumInsighter',   domain='.hedgeye.com', path='/')
 	jar.set('signup_id', '7509',   domain='.hedgeye.com', path='/')
-	jar.set('shopping_cart', '%7B%22timestamp%22%3A1499040499000%7D',   domain='.hedgeye.com', path='/')
+	jar.set('shopping_cart', '%7B%22timestamp%22%3A1499040499000%7D',   domain='.hedgeye.com', path='/')				
+
 	return jar
 def parseDatetime(s):
 	s_ = parser.parse(s).strftime('%B %d, %Y, %H:%M:%S')
