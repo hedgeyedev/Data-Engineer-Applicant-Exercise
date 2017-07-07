@@ -7,11 +7,11 @@ Before starting the module, make sure that your current python environment has t
 * requests
 * bs4
 * os
-* pathlib
 * tqdm
 * tkinter
 * dateutil
 * urllib
+* pandas
 
 To check whether or not you have a module, run your python environment and enter "import <module_name>"
 
@@ -55,24 +55,22 @@ Please select a folder.
 
 A progress bar will show up in the terminal as an indicator for you.
 
-Once done, the folder will be populated by subfolders containing the csv scrapings and the first image of the page, if available.
-
-(The folder called *_Yellen_s Hubris_ Is She Repeating Bernanke_s Big Mistake__* is an example of the *scrape* function.)
+Once done, the folder will be populated by a csv file and any available images that could be collected.
 
 ## CAVEAT
 Unfortunately, the links provided do not contain sufficient information to post author details as required.
 
 To verify that the program works according to specs we will have to do the following:
 
-I had to search for a page that contained author details. The one that I found was "Bull Market Math" with a url: "https://app.hedgeye.com/insights/56097-bull-market-math?single_item=true".
+I had to search for a page that contained author details. The one that I found was "Bull Market Math" with a url: "https://app.hedgeye.com/insights/56097-bull-market-math".
 
 Instead of calling the *scrape* function, we will instead call the *writeToFolder* function as demonstrated:
 
 > \>\>\> import bsScrape  
-> \>\>\> folder = bsScrape.getFolderpath()  
-> \>\>\> bsScrape.writeToFolder("https://app.hedgeye.com/insights/56097-bull-market-math?single_item=true",folder)  
+> \>\>\> filename = bsScrape.setFilename()  
+> \>\>\> df = bsScrape.createDataFrame()  
+> \>\>\> df = bsScrape.writeToFolder("https://app.hedgeye.com/insights/56097-bull-market-math",filename,df)  
 > \>\>\>
 
-We used the getFolderpath function to make it easier to choose where we want the output to go.
+Since I used a pandas DataFrame object to create the csv there are a couple of additional steps added.
 
-The folder created will contain a csv file with the correct author information and the first available image.
