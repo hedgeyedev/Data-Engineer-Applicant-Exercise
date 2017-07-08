@@ -1,0 +1,12 @@
+My Favorites:
+
+    Languages: Ruby, Python, Elixir
+    Editors: Vim and Atom
+    Operating Systems: OS X, Ubuntu, FreeBSD
+    Web Servers: Nginx, Apache, Cowboy
+    App Servers: Puma, Passenger
+    Databases: Postgresql, MySQL, SQL Server
+    Web Frameworks: Rails, Django, Pheonix
+    Javascript Libraries: Vue.js or Ember
+    MAC Apps: Quicksliver, ShiftIt, ExpandDrive, Skitch, iTerm, SelfControl, Slack, Navicat, pgAdmin4, Postgres.app, Evernote
+    Web Apps: Github, Pivotal Tracker, Trello, Stackoverflow
