@@ -1,0 +1,6 @@
+source 'https://rubygems.org' do
+# code ran with latest stable version of ruby is 2.4.1 as of 7/8/2017
+
+gem 'nokogiri', '1.7.1'
+
+end

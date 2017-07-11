@@ -1,28 +1,38 @@
 How many years of development experience do you have?
+    7 years
 
 
 How many years of JavaScript experience do you have?
+    1 year, mostly coded back-end code in ruby.
 
 
 How many years of Ruby experience do you have?
+    2 years.
 
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
+    5 years of VB.NET.
 
 
 What are your opinions on Agile software development?
+    I found the waterfall model is outdated. I enjoy the agile model because it allows testing while you building.
 
 
 TDD or BDD?
+    Both BDD for end-user requirements and then TDD for the developer, in my experience tests can be used as base level of documentation.
 
 
 Do you have any Ruby or Ruby on Rails experience?
+    Yes both Ruby and Rails.
 
 
 What are you looking for in a job?
+    To find a company where I am valued while improving my skillset.
 
 
 Are you legal to work in the US?
+    Yes 100%.
 
 
 When can you start?
+    7/12/2017
