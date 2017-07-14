@@ -1,28 +1,29 @@
 How many years of development experience do you have?
-
+I have four years of development experience.
 
 How many years of JavaScript experience do you have?
-
+I have less than one year of JavaScript experience.
 
 How many years of Ruby experience do you have?
-
+I have less than one year of Ruby experience.
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+I have fours years of experience in other high level languages (mostly VB.NET, VBA, C#, Mathematica, Python)
 
 What are your opinions on Agile software development?
-
+I like the principles behind Agile software development. It is the unsaid way we do things at my current employer.
 
 TDD or BDD?
-
+Both? 
 
 Do you have any Ruby or Ruby on Rails experience?
-
+I have less than one year experience with Ruby on Rails. 
 
 What are you looking for in a job?
-
+I am looking for a job that compensates me for working on hard projects. 
 
 Are you legal to work in the US?
-
+Yes, I am a citizen.
 
 When can you start?
+I have to give a two weeks notice to my current employer before starting.
