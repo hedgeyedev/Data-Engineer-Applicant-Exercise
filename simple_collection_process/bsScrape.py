@@ -3,11 +3,12 @@ import tkinter as tk, pandas as pd
 from tkinter import filedialog
 from dateutil import parser
 from urllib import request
-
 def scrape(url="https://app.hedgeye.com/insights/all?type=insight"):
+	global cookies
+	cookies = getCookies()
 	links = getLinks(url)
 	filename = setFilename()
-	list_=[]
+	list_=[] # shouldn't be here
 	df = createDataFrame()														# provides a database friendly interface
 	print("Generating CSV and downloading available images into directory...")
 	for link in tqdm.tqdm(links[:6]):											# generates progress bar as the program writes each link to file
@@ -53,7 +54,7 @@ def getImage(article):
 			return ["https:"+img['src'],replaceUnwantedChar(img['alt'])]
 def articleText(article):
 	text = ""
-	raw_para = article.find_all('p')											# gets all <p> content within article. No headings for now.
+	raw_para = article.find_all(['p','h2','h3'])											# gets all <p> content within article. No headings for now.
 	for para in raw_para:
 		if para.getText() is not "":
 			text = text + para.getText() + "\n"
@@ -83,7 +84,8 @@ def getTime(soup):
 	time_  = time_spans[1]														# the correct time tag is found by choosing the second span
 	return time_.text
 def getSoup(url):
-	data = requests.get(url,cookies=addCookies())								# needs acceptable cookies to avoid paywall
+	global cookies
+	data = requests.get(url,cookies=cookies)								# needs acceptable cookies to avoid paywall
 	soup = bs4.BeautifulSoup(data.content,"lxml")								# returns a dict that is easy to search
 	return soup
 def getLinks(url):
@@ -106,15 +108,21 @@ def getFolderpath():
 	root.update()
 	file_path = filedialog.askdirectory()
 	return file_path
+def getFilename():
+	root = tk.Tk()
+	root.withdraw()
+	root.update()
+	file_path = filedialog.askopenfilename()
+	return file_path
 def addCookies():
 	jar = requests.cookies.RequestsCookieJar()									# cookies were needed to avoid paywall
 	jar.set('_hedgeye_session', '3aae7d921022b89f5bf234a572616d34',   domain='.hedgeye.com', path='/')
-	jar.set('_gid', 'GA1.2.341995985.1499002730',   domain='.hedgeye.com', path='/')
+	jar.set('_gid', 'GA1.2.1051410506.1500058085',   domain='.hedgeye.com', path='/')
 	jar.set('_ga', 'GA1.2.449954818.1498729384',   domain='.hedgeye.com', path='/')
 	jar.set('customer_type', 'PremiumInsighter',   domain='.hedgeye.com', path='/')
 	jar.set('signup_id', '7509',   domain='.hedgeye.com', path='/')
 	jar.set('shopping_cart', '%7B%22timestamp%22%3A1499040499000%7D',   domain='.hedgeye.com', path='/')				
-
+	#jar.set('hedgeye_session','6d631a10544e376dba7fd87a402e0176',domain='.hedgeye.com', path='/')
 	return jar
 def parseDatetime(s):
 	s_ = parser.parse(s).strftime('%B %d, %Y, %H:%M:%S')
@@ -124,3 +132,13 @@ def replaceUnwantedChar(str):
 		if ch in str:
 			str=str.replace(ch,"_")
 	return str
+def getCookies():
+	jar = requests.cookies.RequestsCookieJar()	
+	with open(getFilename()) as f:
+		columns = ['name','value','domain','path','Expires','Size','HTTP','Secure','SameSite']
+		data = pd.read_csv(f, names = columns)
+		for index,row in data.iterrows():
+			jar.set(str(row['name']),str(row['value']),domain='.hedgeye.com', path='/')
+	return jar
+if __name__=='__main__':
+	scrape()

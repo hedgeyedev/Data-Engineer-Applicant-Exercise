@@ -49,6 +49,8 @@ To start scraping "https://app.hedgeye.com/insights/all?type=insight" just run t
 
 The function already has "https://app.hedgeye.com/insights/all?type=insight" as the default url.
 
+Due to changing cookies, I have had to include a cookies.csv file to store temporary cookies. Navigate to the parent folder for bsScrape.py and select cookies.csv when prompted to "Open file".
+
 As it is running, a folder dialog browser will prompt you for the directory that you would like to store the csv files to.
 
 Please select a folder.
