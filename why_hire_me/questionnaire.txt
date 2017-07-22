@@ -1,28 +1,29 @@
 How many years of development experience do you have?
-
+From college and various research/intern positions, about 3 years. 
 
 How many years of JavaScript experience do you have?
-
+Less than a year
 
 How many years of Ruby experience do you have?
-
+None
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+I have about 2 years experience in C. Same for Java. 
 
 What are your opinions on Agile software development?
-
+Agile is the best to use for SDLC
 
 TDD or BDD?
 
 
 Do you have any Ruby or Ruby on Rails experience?
-
+No
 
 What are you looking for in a job?
-
+I’m looking to work in a innovative environment with friendly, creative people. A full time job where I can collaborate with other people, learn from more experience people and help my peers.
 
 Are you legal to work in the US?
-
+Yes, I am a US citizen
 
 When can you start?
+In August
