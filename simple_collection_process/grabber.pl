@@ -53,6 +53,16 @@ sub collectFrom {
 	print $wh "\nContent Body HTML:\n";
 	print $wh $contentBodyHtml;
 	print $wh "\n";
+	#below I provide alternate code to write the ContentBodyHTML to a txt
+	#I am providing this because in the body of these articles are commas
+	#when those commas are read as part of a CSV, strange and likely unwanted formatting can occur
+	###################
+	#open(my $body, '>', "$dlDir/contentBodyHtml.txt");
+	#print $body "\nContent Body HTML:\n";
+	#print $body $contentBodyHtml;
+	#print $body "\n";
+	#close $body;
+	###################
 	close $wh;
 }
 #this subroutine determines if the article has an author
