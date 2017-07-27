@@ -27,6 +27,7 @@ sub collectFrom {
 	my $page=LWP::Simple::get($url);
 	my @dateTime = getDateTime($page);
 	my $headline = getHeadline($page);
+	#Generates a directory from headline
 	my $dlDir = join('_', split(/\W/, $headline)).'/';
 	mkpath ([$dlDir],1,0711);
 	my @author;
@@ -39,6 +40,7 @@ sub collectFrom {
 	}
 	my $contentBodyHtml = getContent($page);
 	getImage($page, $dlDir);
+	#this is where everything gets written to file
 	open(my $wh, '>', "$dlDir/collected.csv");
 	print $wh "datetime and timezone:\n";
 	foreach(@dateTime){
