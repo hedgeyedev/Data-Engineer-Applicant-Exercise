@@ -4,3 +4,5 @@ CPAN Modules needed:
 	LWP::Simple
 	File::Path
 To run, execute the grabber.pl script
+additionally, this script does generate directories in which to store the first
+image downloaded from each of the articles so gathered
