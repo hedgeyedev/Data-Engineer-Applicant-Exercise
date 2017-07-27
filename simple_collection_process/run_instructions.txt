@@ -1,3 +1,6 @@
 Created by William Stoddard
 Written in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit
-to run, simply execute the grabber.pl script
+CPAN Modules needed:
+	LWP::Simple
+	File::Path
+To run, execute the grabber.pl script
