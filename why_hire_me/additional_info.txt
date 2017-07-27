@@ -1,0 +1,5 @@
+I develop on Linux, Mac, and PC effectively.
+My primary coding languages are Perl and Python, in that order.
+I love Perl for it's flexibilty and ease of use. I love Python for the same reasons.
+I use LiClypse for development in Python, and I write my Perl scripts in gedit on Linux, and Notepad++ on Windows.
+I am one of the hardest workers and quickest learners, and I am excited to use my skills in a professional environment.
