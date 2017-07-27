@@ -1,0 +1,44 @@
+def template(source_template, req_id):
+    
+    template = str(source_template)
+    
+    # The first smell here is the lack of useful comments
+    # Substitute for %CODE%
+    #    The above comment would be better as:
+    #    This replaces the substring "%CODE%" with req_id in source_template
+    #
+    template_split_begin = template.index("%CODE%")
+    template_split_end = template_split_begin + 6
+    template_part_one = str(template[0:(template_split_begin)])
+    template_part_two = str(template[template_split_end:len(template)])
+    code = str(req_id)
+    template = str(template_part_one + code + template_part_two)
+
+    # Substitute for %ALTCODE%
+    #    The above comment would be better as:
+    #    This replaces the substring "%ALTCODE%" with a modified req_id in source_template
+    #
+    template_split_begin = template.index("%ALTCODE%")
+    template_split_end = template_split_begin + 9
+    template_part_one = str(template[0:(template_split_begin)])
+    template_part_two = str(template[template_split_end:len(template)])
+    altcode = code[0:5] + "-" + code[5:8]
+    return template_part_one + altcode + template_part_two
+    #The next smell is repetition, the action of finding parts
+    #one and two of the template is done twice, and reuses the
+    #same variables
+    #
+    #another smell is that the return of this code is overly complicated, 
+    #all that concatenation could've been done outside the return statement
+    #and doing so would increase readability
+    #
+    #additionally, there is a change preventing smell. if the coder needed 
+    #to change the keyword for replacing %CODE% or %ALTCODE% to strings 
+    #with different numbers of characters, the developers would need to 
+    #update the +6 and +9 operations to the new lengths of the strings
+    #
+    #The final smell is that most of this code could be executed using
+    #an existing method, Python's replace() method, which is what
+    #I use in my refactoring of this code
+  
+
