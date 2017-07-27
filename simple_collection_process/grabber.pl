@@ -147,5 +147,4 @@ foreach(@links){
 
 #this creates the run instructions file
 open(my $wh, '>', "run_instructions.txt");
-print ($wh 
-		"Created by William Stoddard\nWritten in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit\nto run, simply execute the grabber.pl script\n");
+print ($wh "Created by William Stoddard\nWritten in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit\nto run, simply execute the grabber.pl script\n");
