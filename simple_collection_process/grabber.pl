@@ -46,7 +46,7 @@ sub collectFrom {
 	}
 	print $wh "\nHeadline:\n";
 	print $wh $headline;
-	print $wh "\nAuthor:\n";
+	print $wh "\nAuthor headshot href, name, twitter handle:\n";
 	foreach(@author){
 		print $wh "$_,";
 	}
