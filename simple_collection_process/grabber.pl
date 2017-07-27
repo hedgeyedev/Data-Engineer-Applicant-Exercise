@@ -27,7 +27,6 @@ sub collectFrom {
 	my $page=LWP::Simple::get($url);
 	my @dateTime = getDateTime($page);
 	my $headline = getHeadline($page);
-	#Generates a directory from headline
 	my $dlDir = join('_', split(/\W/, $headline)).'/';
 	mkpath ([$dlDir],1,0711);
 	my @author;
@@ -40,7 +39,6 @@ sub collectFrom {
 	}
 	my $contentBodyHtml = getContent($page);
 	getImage($page, $dlDir);
-	#this is where everything gets written to file
 	open(my $wh, '>', "$dlDir/collected.csv");
 	print $wh "datetime and timezone:\n";
 	foreach(@dateTime){
@@ -121,7 +119,7 @@ sub getHeadline {
 sub getContent {
 	my ($page) = @_;
 	my $content;
-	if($page=~/<div\sitemprop=\'articleBody\'\sstyle=\'clear\:both\'>\n(.+)\n<\/div>\n<div\sclass=\'author-tag\'>/s){
+	if($page=~/<div\sitemprop=\'articleBody\'\sstyle=\'clear\:both\'>\n(.+)\n<\/div>\n<\/div>\n<\/article>/s){
 		$content = $1;
 		$content=~ s/[^[:ascii:]]+//g;
 	}
@@ -149,4 +147,4 @@ foreach(@links){
 
 #this creates the run instructions file
 open(my $wh, '>', "run_instructions.txt");
-print ($wh "Created by William Stoddard\nWritten in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit\nto run, simply execute the grabber.pl script\n");
+print ($wh "Created by William Stoddard\nWritten in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit\nCPAN Modules needed:\n\tLWP::Simple\n\tFile::Path\nTo run, execute the grabber.pl script\n");
