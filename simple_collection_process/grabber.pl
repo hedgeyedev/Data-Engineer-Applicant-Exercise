@@ -27,7 +27,7 @@ sub collectFrom {
 	my $page=LWP::Simple::get($url);
 	my @dateTime = getDateTime($page);
 	my $headline = getHeadline($page);
-	my $dlDir = join('_', split(/\W/, $headline)).'/';
+	my $dlDir = 'image_'.join('_', split(/\W/, $headline)).'/';
 	mkpath ([$dlDir],1,0711);
 	my @author;
 	if(hasAuthor($page)==1){
@@ -39,7 +39,13 @@ sub collectFrom {
 	}
 	my $contentBodyHtml = getContent($page);
 	getImage($page, $dlDir);
-	open(my $wh, '>', "$dlDir/collected.csv");
+	open(my $wh, '>>', "collected.csv");
+	#below I have included optional code to organize the csv files into separate files and folders,
+	#rather than have all the information in one large csv
+	###################
+	#open(my $wh, '>', "$dlDir/collected.csv");
+	###################
+	#comment out line 42, uncomment line 45, and remove the " 'image_'. " from line 30 to implement
 	print $wh "date,time,timezone:\n";
 	foreach(@dateTime){
 		print $wh "$_,";
@@ -63,6 +69,7 @@ sub collectFrom {
 	#print $body "\n";
 	#close $body;
 	###################
+	#comment out lines 59-61, and uncomment lines 66-70 to implement
 	close $wh;
 }
 #this subroutine determines if the article has an author
