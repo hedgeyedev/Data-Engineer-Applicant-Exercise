@@ -40,13 +40,13 @@ sub collectFrom {
 	my $contentBodyHtml = getContent($page);
 	getImage($page, $dlDir);
 	open(my $wh, '>', "$dlDir/collected.csv");
-	print $wh "datetime and timezone:\n";
+	print $wh "date,time,timezone:\n";
 	foreach(@dateTime){
 		print $wh "$_,";
 	}
 	print $wh "\nHeadline:\n";
 	print $wh $headline;
-	print $wh "\nAuthor headshot href, name, twitter handle:\n";
+	print $wh "\nAuthor headshot href,name,twitter handle:\n";
 	foreach(@author){
 		print $wh "$_,";
 	}
