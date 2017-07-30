@@ -1,21 +1,24 @@
-def template(source_template, req_id):
+#I initiated all of the variables in the beginning of the function an created new variable names instead of redefining any and rearranged the layout of the function so it'd be easier to follow
+#I passed in four new arguments for the function and defined them in the class since they could be used for future functions
+#I also replaced all of the numbers with either 'len()' or 'index()' since they can change and you don't want to go back and change the number every time
+#Some of the variable names were misleading so I changed them to avoid confusion
+
+def template(source_template, req_id, START, END, str1, str2):
     
-    template = str(source_template)
-
-    # Substitute for %CODE%
-    template_split_begin = template.index("%CODE%")
-    template_split_end = template_split_begin + 6
-    template_part_one = str(template[0:(template_split_begin)])
-    template_part_two = str(template[template_split_end:len(template)])
-    code = str(req_id)
-    template = str(template_part_one + code + template_part_two)
-
-    # Substitute for %ALTCODE%
-    template_split_begin = template.index("%ALTCODE%")
-    template_split_end = template_split_begin + 9
-    template_part_one = str(template[0:(template_split_begin)])
-    template_part_two = str(template[template_split_end:len(template)])
-    altcode = code[0:5] + "-" + code[5:8]
-    return template_part_one + altcode + template_part_two
+    #arguments
+    templateStr = str(source_template)
+    req = str(req_id)
+    
+    #string splits
+    template_split_one = templateStr.index(str1)
+    template_split_two = template_split_one + len(str1)
+    template_split_three = templateStr.index(str2)
+    
+    #string parts
+    template_part_one = str(templateStr[:(template_split_one)])
+    template_part_two = str(templateStr[template_split_two:template_split_three])
+    template_part_three = req[:START] + "-" + req[START:END]
+    
+    return template_part_one + req_id + template_part_two + template_part_three
   
 
