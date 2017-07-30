@@ -1,28 +1,29 @@
 How many years of development experience do you have?
-
+4
 
 How many years of JavaScript experience do you have?
-
+1
 
 How many years of Ruby experience do you have?
-
+0
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+I have three years of experience in C++ and Python
 
 What are your opinions on Agile software development?
-
+I don't have any experience with Agile software devlopment, but from what I have heard, it sounds like a very efficient way for a team of coders to complete programming tasks
 
 TDD or BDD?
-
+At school and my internships, BDD was mainly used.
 
 Do you have any Ruby or Ruby on Rails experience?
-
+No
 
 What are you looking for in a job?
-
+I'm looking for a job where I can utilize the skills I leaned from school and from my internships. I hope to improve these skills and learn new ones such as corporate experience and also learn new promgramming languages. 
 
 Are you legal to work in the US?
-
+Yes
 
 When can you start?
+I'm available to start as soon as possible
