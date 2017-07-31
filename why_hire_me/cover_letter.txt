@@ -1,0 +1,25 @@
+Will John Stoddard
+206 Umpawag Road,
+Redding, CT 06896
+July 27, 2017
+
+Hedgeye
+
+Dear Hiring Manager:
+I may not have majored in Computer Science, but I did specialize in working with data during my time as a Computer Science minor. 
+My research advisor consistently gave me and my team work of a post-graduate level. 
+In my Philosophy major I honed my skills with logic, and developed strong writing and communication abilities.
+I am confident that my skills and my passion for data are a perfect match for this position.
+
+I would bring to your company a broad range of skills, including:
+	Years of experience coding in Perl and Python
+	A thorough understanding of the Software Development Life-Cycle
+	Strong proficiency gathering and organzing data from both databases and the web
+	Strong writing and critical analysis skills
+	Strong interpersonal and communication skills
+
+I would welcome the opportunity to further discuss this position with you. 
+
+Sincerely,
+
+Will Stoddard

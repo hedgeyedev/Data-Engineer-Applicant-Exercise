@@ -1,0 +1,16 @@
+Created by William Stoddard
+Written in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit
+CPAN Modules needed:
+	LWP::Simple
+	File::Path
+To run, execute the grabber.pl script
+additionally, this script does generate directories in which to store the first
+image downloaded from each of the articles so gathered
+
+tester.pl and debug.txt are files I use to test the csv output by grabber.pl
+
+I wrote that script to ensure that the entirety of the ContentBodyHTML is on
+one line with no newlines or commas. github and excel often interpret html tags
+by adding newlines between them. such a format is not database-friendly so I made
+sure that the raw csv was database-friendly, assuming the only delimiter is ',';
+to run tester.pl, make sure it is in the same directory as collected.csv and execute it

@@ -1,28 +1,52 @@
 How many years of development experience do you have?
-
+I've consistently been working on development projects
+throughout my 4 years of college. Additionally, I took 
+a course called Topics In Software Development in which 
+I led a team of developers in a project assigned to us
+by a real-world client selected by the professor.
+In this course we studied the SDLC and collaberated
+with the client to produce a webapp.
 
 How many years of JavaScript experience do you have?
-
+I have 1 year of experience with Javascript
 
 How many years of Ruby experience do you have?
-
+I have 1 year of experience with Ruby
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+I have been coding in Perl and Python extensively throughout my 4 years in college.
+Perl is my primary language and I am skilled with it.
 
 What are your opinions on Agile software development?
-
+I think it is effective, the Topics In Software Development
+course taught us to work in a Scrum framework. Agile development
+allows for rapid prototyping and adaptability. These align well
+with my personal coding style and focus. Frequent collaberation
+with the client is also very helpful and effective to the process,
+as the client doesn't always know precisely what they want from the
+start. This allows developers and clients to grow a project together,
+which is often much more effective than developers giving the client
+a finished product that the client then realizes wasn't what they wanted.
 
 TDD or BDD?
-
+The two are not mutually exclusive. Behavior Driven Development informs and enriches
+one's performance of Test Driven Development. Tests are one's benchmarks, but behavior is
+how one reaches those benchmarks. BDD assumes nothing about the implementation of ones code,
+and as such provides the developers with a test that will inform them regarding behavior across
+every implementation scenario.
 
 Do you have any Ruby or Ruby on Rails experience?
-
+I have 1 year of experience with Ruby, though I've never used Ruby on Rails.
+However, I am a fast learner.
 
 What are you looking for in a job?
-
+I'm looking for something engaging and collaberative. I work very well with a team,
+and dealing with data is like an endlessly engaging puzzle to me. I can code for hours
+sometimes forgetting to eat. I have led teams, and I've been lead, and love working with 
+others in either setting. 
 
 Are you legal to work in the US?
-
+Yes, I am a US Citizen
 
 When can you start?
+August 1st
