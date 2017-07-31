@@ -35,7 +35,7 @@ sub collectFrom {
 		@author = getAuthor($page);
 	}
 	else{
-		push(@author,"Author not specified");
+		push(@author,"n/a,n/a,n/a");
 	}
 	my $contentBodyHtml = getContent($page);
 	getImage($page, $dlDir);
@@ -54,11 +54,17 @@ sub collectFrom {
 		print $wh "$_,";
 	}
 	#to remove commas and newlines from contentBodyHtml:
-	###################
 	$contentBodyHtml=~s/,/ /g;
 	$contentBodyHtml=~s/\n//g;
-	#uncomment the following line to remove the majority of html tags from contentBodyHtml
-	#$contentBodyHtml=~s/<[\/apbh3i]+>//g;
+	#uncomment the following lines to remove the majority of html tags from contentBodyHtml.
+	#Warning: the regex is not perfect yet, may remove some body content in addition to the html tags.
+	###################
+	#$contentBodyHtml=~s/<[\/apbh3iem]{1,3}>//g;
+	#$contentBodyHtml=~s/<\/*span( style=['"].+['"])*>//g;
+	#$contentBodyHtml=~s/<\/*div( class=['"].+['"])*>//g;
+	#$contentBodyHtml=~s/<\/*a href=['"].+['"]( (target=['"].*['"])|(rel=['"].*['"])|(data-slimstat=['"].*['"]))*>//g;
+	#$contentBodyHtml=~s/<\/*img alt=['"].*['"]( (class=['"].*['"])|(sizes=['"].*['"])|(src=['"].*['"])(srcset=['"].*['"]))* *\/*>//g;
+	#$contentBodyHtml=~s/<\/*strong>//g;
 	###################
 	print $wh $contentBodyHtml;
 	print $wh "\n";
@@ -91,15 +97,15 @@ sub getAuthor {
 	my @authorInfo;
 	if($page=~ /<div class=\'headshot\'>(.+)src=\"(.+)\"/){
 		push(@authorInfo, $2);
-	}
+	}else{push(@authorInfo, "n/a");}
 	if($page=~ /<div class=\'full-name\'>(.+)</) {
 		push(@authorInfo, $1);
-	}
+	}else{push(@authorInfo, "n/a");}
 	if($page=~ m/\<div class=\'twitter-handle\'\>/){
 		if($page=~ /\<a href=\"http\:\/\/twitter.com\/(\@.+)\"\s/){
 			push (@authorInfo, $1);
 		}
-	}
+	}else{push(@authorInfo, "n/a");}
 	return @authorInfo;
 }
 
@@ -109,7 +115,7 @@ sub getDateTime {
 	my @dateTime;
 	if($page=~ /<time datetime=\'(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2}:\d{2})(.\d{2}:\d{2})\'/){
 		push(@dateTime, ($1, $2, $3));
-	}
+	}else{push(@dateTime, "n/a");}
 	return @dateTime;
 }
 
@@ -120,7 +126,7 @@ sub getHeadline {
 	if($page=~ /headline_droid\'\sitemprop=\'name\'>\n(.+)\n/){
 		$headline = $1;
 		$headline=~ s/[^[:ascii:]]+//g;
-	}
+	}else{$headline= "n/a";}
 	return $headline;
 }
 
@@ -131,7 +137,7 @@ sub getContent {
 	if($page=~/<div\sitemprop=\'articleBody\'\sstyle=\'clear\:both\'>\n(.+)\n<\/div>\n<\/div>\n<\/article>/s){
 		$content = $1;
 		$content=~ s/[^[:ascii:]]+//g;
-	}
+	}else{$content="n/a";}
 	return $content;
 }
 
