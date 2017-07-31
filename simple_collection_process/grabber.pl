@@ -46,17 +46,20 @@ sub collectFrom {
 	#open(my $wh, '>', "$dlDir/collected.csv");
 	###################
 	#comment out line 42, uncomment line 45, and remove the " 'image_'. " from line 30 to implement
-	print $wh "date,time,timezone:\n";
+	print $wh "$headline,";
 	foreach(@dateTime){
 		print $wh "$_,";
 	}
-	print $wh "\nHeadline:\n";
-	print $wh $headline;
-	print $wh "\nAuthor headshot href,name,twitter handle:\n";
 	foreach(@author){
 		print $wh "$_,";
 	}
-	print $wh "\nContent Body HTML:\n";
+	#to remove commas and newlines from contentBodyHtml:
+	###################
+	$contentBodyHtml=~s/,/ /g;
+	$contentBodyHtml=~s/\n//g;
+	#uncomment the following line to remove the majority of html tags from contentBodyHtml
+	#$contentBodyHtml=~s/<[\/apbh3i]+>//g;
+	###################
 	print $wh $contentBodyHtml;
 	print $wh "\n";
 	#below I provide alternate code to write the ContentBodyHTML to a txt
@@ -69,7 +72,6 @@ sub collectFrom {
 	#print $body "\n";
 	#close $body;
 	###################
-	#comment out lines 59-61, and uncomment lines 66-70 to implement
 	close $wh;
 }
 #this subroutine determines if the article has an author
@@ -148,10 +150,13 @@ sub getImage {
 }
 
 #this loop runs collectFrom on the first six articles
+open(my $wh, '>', "collected.csv");
+print $wh "Headline,Date,Time,Timezone,Author Headshot Href,Name,Twitter Handle,Content Body HTML\n";
+close $wh;
 foreach(@links){
 	collectFrom($_);
 }
 
 #this creates the run instructions file
-open(my $wh, '>', "run_instructions.txt");
-print ($wh "Created by William Stoddard\nWritten in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit\nCPAN Modules needed:\n\tLWP::Simple\n\tFile::Path\nTo run, execute the grabber.pl script\n");
+open(my $ri, '>', "run_instructions.txt");
+print ($ri "Created by William Stoddard\nWritten in Perl, on a Windows desktop running Strawberry Perl 5.26.0.1 64bit\nCPAN Modules needed:\n\tLWP::Simple\n\tFile::Path\nTo run, execute the grabber.pl script\n");
