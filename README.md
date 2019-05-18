@@ -8,7 +8,7 @@ To be considered for a Data Engineer position at [Hedgeye](http://www2.hedgeye.c
     * Fill out the `questionnaire.txt` and commit it
     * Add anything else we should know.  For example, one of your preferred development tools (editor, desktop app, etc.) and why you use it.
 3. In the *simple_collection_process* directory, using the programming language / tool of your preference, create a script that collects 
-the following information from the first 6 articles on our website [here](https://app.hedgeye.com/insights/all?type=insight) and saves it to a CSV file. 
+the following information from the first 6 articles under the "Latest Macro" section on our website [here](https://app.hedgeye.com/insights/all?type=macro) and saves it to a CSV file. 
     * Datetime Published
     * Headline
     * If an author exists (only first author):
