@@ -1,28 +1,36 @@
 How many years of development experience do you have?
-
+*1year of development experience
+~4years of data analytics experience
 
 How many years of JavaScript experience do you have?
+*I have not worked with javascript, but I have the ability to learn and pickup the language fast
+*However, I have experience working with python
 
 
 How many years of Ruby experience do you have?
-
+*I have not worked with javascript, but I have the ability to learn and pickup the language fast
+*However, I have experience working with python
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+*1year python experience
 
 What are your opinions on Agile software development?
-
+*agile software development has proven consistently to deliver a responsive software delivery  with great benefits
+ to both the clients and the users
 
 TDD or BDD?
-
+*TDD: It focuses on rapid delivery with detail upfront planning before development process starts 
 
 Do you have any Ruby or Ruby on Rails experience?
-
+*No, but I can readily pick up and learn the language
 
 What are you looking for in a job?
-
+*Opportunity to add value to the organization and my colleauges
+*Actively involved in work processes
+*Opportunity for continuous improvement
 
 Are you legal to work in the US?
-
+*Yes
 
 When can you start?
+*Readily available with 1 week notice
