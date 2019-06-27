@@ -1,0 +1,31 @@
+Adedeji Ayinde
+60 W Broad Street
+Stamford, CT 06902
+203-979-5827
+ayindedeji@gmail.com
+
+June 26, 2019
+
+Hiring Manager
+Hedgeye Risk Management LLC
+RE: Data Engineer
+
+Dear Forrest Chang:
+
+I recently applied for the Data Engineering position at Hedgeye Risk Management and I have been invited to participate in the github pull request job application process to which I have successfully committed my codes and initiated a pull request.
+I recently graduated from MS Business Analytics Program at the University of Connecticut where I developed great interest in data engineering and analytics using tools such as  python, SQL and Tableau with exposure to big data technology on Cloudera platform. Prior to my graduate study at The University of Connecticut, I worked as a data analyst at Saipem where I performed extensive data analysis. I believe that my training and experience closely match your requirements and would make me an asset to your organization.
+
+The following are some of my skills that are relevant to this data engineer position:
+
+•	Ability to implement and validate predictive models, and create and maintain statistical models with a focus on big data
+•	Ability to implement and support data retrieval, ingestion and consumption pipelines for datasets
+•	Excellent communication skill to interface with both internal and external clients to understand business needs and provided analytical solutions
+My strength lies in my ability to be highly motivated, learn on the fly and remain focused in fast paced environments.
+I am convinced that my commitment to excellence and the ability to function as an integral part of a team would allow me to make a valuable contribution to Hedgeye Risk Management.
+I look forward to a positive feedback and learning about the next steps in the hiring process.
+
+Thank you for your time and consideration.
+
+Sincerely,
+
+Adedeji Ayinde
