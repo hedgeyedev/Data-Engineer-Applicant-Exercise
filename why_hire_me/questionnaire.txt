@@ -1,28 +1,29 @@
 How many years of development experience do you have?
-
+Approximately 4 years.
 
 How many years of JavaScript experience do you have?
-
+Approximately 3 years.
 
 How many years of Ruby experience do you have?
-
+Approximately 6 months.
 
 How many years of other high level language(s) if not Ruby or JavaScript do you have?
-
+Approximately 4 years of Python and SQL.
 
 What are your opinions on Agile software development?
-
+As a preface I tend towards being adaptable and open minded.  In short, having the “right” leaders/team members likely influences Agile a lot.  I think it could be a great experience/outcome with the right team but given the same project/team using a different approach might not have as great of an outcome.  As a coder, it sounds like Agile can result in an amazing balance of freedom, challenges and fun.
 
 TDD or BDD?
-
+I am less familiar with BDD than TDD but it sounds like they can be complementary to each other!
 
 Do you have any Ruby or Ruby on Rails experience?
-
+Approximately 6 months of Ruby and Ruby on Rails experience.
 
 What are you looking for in a job?
-
+I am looking for a job where I can allocate more of my time to contributing to/working with a team (both independently within the team and collectively) , mastering a stack, and building something useful!  Much of my last 6 months of coding has centered on rapidly training up on a technology, building simple apps with it, and moving on to another technology.  I’ve learned a lot in this process but am ready to be part of, learn from, and contribute to a team!
 
 Are you legal to work in the US?
-
+Yes.
 
 When can you start?
+Now.
