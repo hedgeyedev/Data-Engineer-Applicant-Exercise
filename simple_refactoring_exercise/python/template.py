@@ -57,7 +57,7 @@ def template(source_template, req_id):
     print('altcode:', altcode)
 
 
-    print(template_part_one + altcode + template_part_two)
+    print('This gets returned:', template_part_one + altcode + template_part_two)
 
     #put it all back together
     return template_part_one + altcode + template_part_two

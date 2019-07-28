@@ -152,10 +152,18 @@ if __name__ == "__main__":
     #argparsing option information
     parser = argparse.ArgumentParser(description='Tool to scrape basic data from Hedgeye site')
 
-    parser.add_argument('--page',type=str, const='macro', nargs='?', help="select a page to scrape (default is macro)", choices=['macro', 'bullish', 'bearish', 'what-the-media-missed', 'cartoons', 'policy'])
+    parser.add_argument('--page',type=str, 
+                        const='macro', 
+                        nargs='?', 
+                        help="select a page to scrape (default is macro)", 
+                        choices=['macro', 'bullish', 'bearish', 'what-the-media-missed', 'cartoons', 'policy'])
     parser.set_defaults(page='macro')
 
-    parser.add_argument('--num_articles', const=6, type=int, nargs='?', help='select a number of articles to scrape (default is 6)', choices=range(1,31))
+    parser.add_argument('--num_articles', 
+                        const=6, type=int, 
+                        nargs='?', 
+                        help='select a number of articles to scrape (default is 6)', 
+                        choices=range(1,31))
     parser.set_defaults(num_articles=6)
 
     args = parser.parse_args()
