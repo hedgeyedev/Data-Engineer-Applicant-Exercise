@@ -1,4 +1,3 @@
-
 from bs4 import BeautifulSoup #4.7.1 
 from urllib.request import Request, urlopen
 import csv
@@ -27,18 +26,11 @@ To scrape 10 articles from bearish section, run script like this:
 
 `python simple_collection_process/collection.py --page=bearish --num_articles=10`
 
-
 Images will also be downloaded to local `image` folder
-
-
 '''
-
-
-
 
 def collect_info(base_url, link):
     '''
-
     Given a url link will extract key data points from web page
 
     Parameters
@@ -49,8 +41,6 @@ def collect_info(base_url, link):
     Returns
     =======
     dict
-
-
     '''
     
     #we'll store each links metadata in this dictionary
@@ -101,9 +91,6 @@ def collect_info(base_url, link):
         row_dict['twitter_handle'] = ''
         print('Link did not contain twitter_handle: {}'.format(href))
 
-
-
-
     try:
         body = soup.find("div", {"itemprop": "articleBody"})
         row_dict['content_body_html'] = body #content_body
@@ -116,7 +103,7 @@ def collect_info(base_url, link):
     except AttributeError:
         row_dict['content_body_html'] = ''
         print('Link did not contain content_body_html: {}'.format(href))
-        
+
     
     print('Completed info collection from {}'.format(href))
     return row_dict
