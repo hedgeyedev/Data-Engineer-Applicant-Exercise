@@ -30,9 +30,14 @@ def template(source_template, req_id):
     template = str(template_part_one + code + template_part_two)
     print('template:', template)
 
+    print()
     print('#################################')
+    print()
+    print('Subtitute part 2')
+    print()
+    print('#################################')
+    print()
     # Substitute for %ALTCODE%
-
     #find index start for %ALTCODE% string, we'll insert our modified code string in that index
     #we are now working on the second part of the template string
     template_split_begin = template.index("%ALTCODE%")
