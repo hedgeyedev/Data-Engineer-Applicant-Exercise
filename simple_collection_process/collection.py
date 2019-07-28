@@ -53,37 +53,54 @@ def collect_info(base_url, link):
 
     '''
     
+    #we'll store each links metadata in this dictionary
     row_dict = {}
+
+    #this is the link to the specific article
     href = link.find('a')['href']
-    #print(href)
+
+    #Beautiful Soup returns an object we can parse to identify the tags we want to extract
     soup = BeautifulSoup(urlopen(base_url + href), 'html.parser')    
+
+
+    #Use of try except for each item just in case some article links are missing unexpected elements
+    #Still want to collect the remaining data points
 
     try:
         row_dict['publish_time'] = soup.find("div", {"class": "tags"}).time.text.strip('\n')#publish time
     except AttributeError:
         row_dict['publish_time'] = ''
+        print('Link did not contain publish_time: {}'.format(href))
 
     try:
         title = soup.find("div", {"class": "headline-link"}).text.strip('\n')
         row_dict['article_title'] = title #article_title,
     except AttributeError:
         row_dict['article_title'] = ''
+        print('Link did not contain article_title: {}'.format(href))
+
 
     try:
         source = soup.find("div", {"class": "headshot"}).find('img')['src']
         row_dict['writer_image_source'] = source # headshot_img_src
     except:
         row_dict['writer_image_source'] = ''
+        print('Link did not contain writer_image_source: {}'.format(href))
+
 
     try:
         row_dict['writer_name'] = soup.find("div", {"class": "full-name"}).text #writer_name
     except AttributeError:
         row_dict['writer_name'] = ''
+        print('Link did not contain writer_name: {}'.format(href))
+
 
     try:
         row_dict['twitter_handle'] = soup.find("div", {"class": "twitter-handle"}).text.strip('\n'), #twitter_handle
     except AttributeError:
         row_dict['twitter_handle'] = ''
+        print('Link did not contain twitter_handle: {}'.format(href))
+
 
 
 
@@ -98,6 +115,8 @@ def collect_info(base_url, link):
             f.close()
     except AttributeError:
         row_dict['content_body_html'] = ''
+        print('Link did not contain content_body_html: {}'.format(href))
+        
     
     print('Completed info collection from {}'.format(href))
     return row_dict
