@@ -1,0 +1,14 @@
+Hello Friends at Hedgeye,
+
+
+I first learned about Hedgeye from the MacroVoices podcast. I have a very strong interest in markets and I seek to apply my background in technology to problems in the financial world. This is an interesting position to me since my work at Rhodium Group, while more scientific computing in nature, was enabling the research and analysis for client and public-facing content. I always maintain a client and business focused attitude towards problem solving. I am not a technology for technology sake person. However, I always try to find better solutions to problems, from whichever domain they may emerge. This is good for the engineers, good for the business, and ultimately good for clients. 
+
+Most of my development background has been in the python data stack but I have some experience in Ruby and Javascript web frameworks. At Rhodium, I was responsible for our cloud deployments on AWS and GCP and I am quite comfortable building applications in these environments. I also have experience with docker and kubernetes because I built several applications on GCP using kubernetes. I am a motivated learner because I love to solve increasingly challenging problems with the skills I acquire. 
+
+Beyond technical abilities and interest, I look forward to being part of an all-star team. I love to contribute to the winning effort. I love to mentor junior team mates and share my knowledge. I am also quick to seek advice on things for which I lack expertise. Finally, I have worked remotely with a distributed team so I am quite comfortable with a flexible work style. I mention this because it looks like Hedgeye has team members distributed around the country. 
+
+Thank you for your consideration.
+
+Sincerely,
+
+Justin 

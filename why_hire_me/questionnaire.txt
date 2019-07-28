@@ -1,28 +1,46 @@
-How many years of development experience do you have?
+How many years of development experience do you have? 5
 
 
-How many years of JavaScript experience do you have?
+How many years of JavaScript experience do you have? 
+
+I used Javascript for 6 monts in 2014. I have not really touched it since.
 
 
-How many years of Ruby experience do you have?
+How many years of Ruby experience do you have? 
+
+I have built 2 small applications with Ruby on Rails. Last was in 2016. I helped build an event and user database for a meetup group. I followed a tutorial I saw online.
 
 
-How many years of other high level language(s) if not Ruby or JavaScript do you have?
+How many years of other high level language(s) if not Ruby or JavaScript do you have? 
+
+4 in Python
 
 
-What are your opinions on Agile software development?
+What are your opinions on Agile software development? 
+
+I like it. I think it reflects the reality on the ground. Things change. All things change through time and we need to be able to respond to those changes. I feel you need people who are open, honest and not afraid to communicate there true preferences and abilities in this environment. The hard part is the people side, getting people to agree to an operational protocol. And they have to really agree to it. You need people who are patient and flexible because things can change and that may be disruptive. 
 
 
-TDD or BDD?
+TDD or BDD? 
+
+I honestly do not have a strong set of ideas for one vs the other. For me TDD has made more sense because I have not been building heavy consumer facing applications. We were building numerical computing applications and so we did tests that met those requirements. I think for most other software applications where expected behavior can be more unpredictable, BDD makes more sense. I don't have alot of experience with it but I am happy to learn. I'd say I believe strongly in documentation and writing as much as possible to inform future users on how to use tools. 
 
 
-Do you have any Ruby or Ruby on Rails experience?
+Do you have any Ruby or Ruby on Rails experience? 
+
+Yes. Minimal. Would love to learn more. 
 
 
-What are you looking for in a job?
+What are you looking for in a job? 
+
+I want to work with motivated people, who I can work with, motivate, learn from, improve with as a technologist. Its important that the team is committed to learning what is best and staying on top of trends to find out if there is a better way to do things than they currently are. The product and company matters to me alot. I only want to work on products and for companies that I understand and think are doing good in the world. I know Hedgeye from some podcasts I listen to. I am very interested in financial markets. 
 
 
-Are you legal to work in the US?
+Are you legal to work in the US? 
+
+Yes
 
 
-When can you start?
+When can you start? 
+
+ASAP
