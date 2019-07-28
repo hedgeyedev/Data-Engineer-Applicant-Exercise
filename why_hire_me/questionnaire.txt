@@ -27,3 +27,9 @@ Yes.
 
 When can you start?
 Now.
+
+
+"Anything else we should know" bullet:
+My preferred tools are pretty boring as they are mostly the result of what was being used when I was learning.  However, one thing I have noticed about the tech/tools are the communities that support them.  First, I started coding by chance.  So when I discovered the Open Source community and the amount of knowledge and effort that is out there working to get to anyone and everyone, I was blown away.  Today it still amazes me who and what is available for us to learn!  My exposure to/experience with Python and Django and their community (including documentation and they are amazing!) has included smart, friendly, and helpful people.  It really is awesome and my understanding and shorter experience with Ruby and Rails has been very similar so far (quite a few Ruby/Rails quotes in the Django REST Framework docs!)!
+
+This exercise was great.  Love the format/idea (pull request etc.) and I already learned so much from it.  Thank you for the opportunity!

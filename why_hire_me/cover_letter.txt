@@ -1,0 +1,15 @@
+Dear Forrest,
+
+From the time I did my first python and data science tutorial I knew most investment processes would need to adapt.  Since then I have concentrated on the intersection of software and data science.
+
+As a developer I've focused on improving the user's workflow along with opportunities to understand and apply machine learning/AI while collecting proprietary datasets in the process.  An example is an app I built to enhance the accessibility of a data science team's machine learning models by implementing them in a web application (python, django, keras, tensorflow, postgresql, etc.).  The app allows non-technical decision makers to interact with the team’s models, while also collecting new training data.
+
+After building with popular web development (rails, react, express, django, javascript, mongodb, postgresql etc.) and data science (python, scikit-learn, keras, numpy, pandas, etc.) stacks, I know I am able to independently and rapidly train up on and build with new tech but look forward to joining a team and mastering their stack and process.
+
+Thank you for your time and please check out the examples of my apps km48.github.io/projects/ and my code github.com/km48/.
+
+Best,
+
+Kyle
+
+I chose Python for the simple_refactoring_exercise.
